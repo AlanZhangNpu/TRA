@@ -1,2 +1,2 @@
-# TRA
-time-variant reliability analysis method
+# Time-variant Reliability Analysis (TRA)
+This repository contains the source code of three TRA methods (MCS, TDTRA, and AMPPT) and four test examples (a steel beam, a cantilever tube, a hydrokinetic turbine blade, and a solid rocket engine).

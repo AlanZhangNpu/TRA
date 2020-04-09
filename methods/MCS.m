@@ -1,14 +1,27 @@
-function result = MCS( problem, par )
+function result = MCS( problem, option )
 % Monto Carlo Simulation 
 % for time-variant reliability analysis
+% 
+% Structure of the arguments
+% problem:
+%   problem.variable_table;
+%   problem.Ts;
+%   problem.Te;
+%   problem.performanceFunc;
+% 
+% option:
+%   option.n_MCS
+%   option.n_time_instant
+% 
+% auther: zyw (ywzhang@nwpu.edu.cn)
 
-% setting parameters
+% parameter settings
 if nargin == 3
     n_MCS = 1e6;
     n_time_instant = 400;
 else
-    n_MCS = par.n_MCS;
-    n_time_instant = par.n_time_instant;
+    n_MCS = option.n_MCS;
+    n_time_instant = option.n_time_instant;
 end
 variable_table = problem.variable_table;
 performanceFunc = problem.performanceFunc;

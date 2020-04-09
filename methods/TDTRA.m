@@ -1,10 +1,19 @@
 function result = TDTRA( problem, option )
 % Time-discritization based time-variant
 % reliability analysis (TDTRA)
-
+% 
+% Structure of the arguments
+% problem:
+%   problem.variable_table;
+%   problem.Ts;
+%   problem.Te;
+%   problem.performanceFunc;
+% 
 % option:
 %   option.inverse
 %   option.time_node_num
+% 
+% auther: zyw (ywzhang@nwpu.edu.cn)
 
 if ~isfield(option, 'inverse')
     option.inverse = 0;

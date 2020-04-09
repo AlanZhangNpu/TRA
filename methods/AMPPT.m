@@ -9,13 +9,13 @@ function result = AMPPT( problem, option )
 %   problem.Ts;
 %   problem.Te;
 %   problem.performanceFunc;
-%   problem.autocorrelationCoefficientFunc;
 % 
 % option:
-%   TDTRA
 %   option.approximation_initial_point_num
 %   option.approximation_tolerance
 %   option.discretization_node_num
+% 
+% auther: zyw (ywzhang@nwpu.edu.cn)
 
 
 if ~isfield(option, 'inverse')
